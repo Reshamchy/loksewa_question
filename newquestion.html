@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<title>Loksewa Aayog - Latest Questions</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #eef3f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2c3e50, #2980b9);
+      color: #fff;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    main {
+      padding: 30px 20px;
+      max-width: 960px;
+      margin: auto;
+    }
+
+    .question-box {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      white-space: pre-wrap;
+      line-height: 1.8;
+      font-size: 17px;
+      color: #2d3436;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #777;
+      padding: 20px;
+      margin-top: 40px;
+      background-color: #f9f9f9;
+      border-top: 1px solid #ccc;
+    }
+
+    .controls {
+      text-align: right;
+      margin-bottom: 20px;
+    }
+
+    .controls button {
+      background-color: #2980b9;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .controls button:hover {
+      background-color: #1f6391;
+    }
+
+    @media print {
+      header, .controls, .footer {
+        display: none;
+      }
+
+      main {
+        padding: 0;
+        margin: 0;
+      }
+
+      .question-box {
+        box-shadow: none;
+        border-radius: 0;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>📘 Loksewa Aayog - Latest Long Questions Collection</h1>
+</header>
+
+<main>
+  <div class="controls">
+    <button onclick="window.print()">🖨 Print</button>
+  </div>
+
+  <div class="question-box" id="questionBox">
+    Loading...
+  </div>
+</main>
+
+<div class="footer">
+  &copy; 2025 | Powered by ChatGPT | Banking Long Questions
+</div>
+
+<script src="newquestion.js"></script>
+<script>
+  document.getElementById('questionBox').textContent = questionsText;
+</script>
+
+</body>
+</html>
